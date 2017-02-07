@@ -3,7 +3,7 @@
 + 有时候我们需要第一次启动的时候保存一些插件的配置数据，第二次启动的时候，BIM-STAR系统会按照之前设置的数据选项来处理插件。比如每次启动BIM-STAR都会有起始页，那么我们可以在菜单栏->系统->系统设置->插件->起始页里取消勾选`启动时启动显示页`，那么再次启动BIM-STAR时候就不会有起始页显示了。接下来就讲解一下如何在系统设置里加入配置页的。
 + 这一章是在最基本的插件可以在BIM-STAR上加载的基础上进行讲解的，如何创建最基本的插件不再详述。
 
-1. 首先添加`WallE.Assist.dll`引用，然后新建一个类，命名为`GlobalConfig.cs`，代码如下所示。
+1. 右键引用，添加`WallE.Assist.dll`引用，然后新建一个类，命名为`GlobalConfig.cs`，代码如下所示。
 
    ```c#
    using System.IO;
@@ -48,7 +48,7 @@
    ```
 
 
-2. 然后在View文件夹里添加一个用户控件，命名为`SettingView.xaml`。![12](Pictures/12.png)
+2. 在View文件夹里添加一个用户控件，命名为`SettingView.xaml`。![12](Pictures/12.png)
 
 3. `SettingView.xaml`的代码内容如下所示。`CheckBox`控件的IsChecked绑定的是`GlobalConfig.cs`里的属性AlwaysShow，`TextBox`控件绑定的是GlobalConfig.cs里的属性Name。
 
@@ -74,7 +74,7 @@
    </UserControl>
    ```
 
-4. 接着在`MainPlugin.cs`中添加如下代码。加载插件的时候对GlobalConfig.Ins.AlwaysShow进行判断是否显示面板。
+4. 在`MainPlugin.cs`中添加如下代码。加载插件的时候对GlobalConfig.Ins.AlwaysShow进行判断是否显示面板。
 
    ```c#
    using CreatePluginDemo.ViewModels;

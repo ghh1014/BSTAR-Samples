@@ -4,7 +4,7 @@
 
 #### 窗口的显示
 
-+ 有时候需要把展示的界面用窗口的形式显示出来，那么MainPlugin.cs中代码应该如下。
++ 有时候需要把展示的界面用窗口的形式显示出来，那么MainPlugin.cs中代码内容应该如下。
 
   ```c#
   using CreatePluginDemo.ViewModels;

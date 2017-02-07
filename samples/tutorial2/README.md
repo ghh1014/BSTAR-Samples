@@ -2,9 +2,9 @@
 
 ## 面板的显示
 
-+ 这一章是在最基本的插件可以在BIM-STAR上加载的基础上进行讲解的，如何创建最基本的插件不再详述。
++ 这一章是在最基本的插件可以在BIM-STAR上加载的基础上进行讲解的，至于如何创建最基本的插件请点击[创建最基本的插件](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial1)。
 
-1. 首先需要在View文件夹下新建一个`FirstView.xaml`文件，内容如下所示。这个时候可能会出现`类型'ViewBase'不支持直接内容`的提示，添加了引用` System.Xaml`之后就可以解决这个问题了。
+1. 在View文件夹下新建一个`FirstView.xaml`文件，内容如下所示。这个时候可能会出现`类型'ViewBase'不支持直接内容`的提示，添加了引用` System.Xaml`之后就可以解决这个问题了。
 
    ```html
    <core:ViewBase x:Class="CreatePluginDemo.Views.FirstView"
@@ -22,7 +22,7 @@
    </core:ViewBase>
    ```
 
-2. 然后在ViewModel文件夹下新建一个`FirstViewModel.cs`文件，代码如下所示。虽然在这里不需要执行什么代码，但还是需要创建这个类的。至于为什么这么做，请看`界面数据的显示`章节的详解。
+2. 在ViewModel文件夹下新建一个`FirstViewModel.cs`文件，代码如下所示。虽然在这里不需要执行什么代码，但还是需要创建这个类的。至于为何请看[ViewModel与View的创建](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial9) 。
 
    ```c#
    using WallE.Core;
@@ -34,7 +34,7 @@
    }
    ```
 
-3. 最后在`MainPlugin.cs`中添加如下所示的代码。Install方法会在插件加载的时候执行，具体插件何时加载请看插件的配置文件详解一节。Install方法执行的时候会往视图菜单里添加一个按钮，点击按钮之后会执行ShowPane方法，关于菜单按钮的不理解，请看菜单章节的详解。
+3. 在`MainPlugin.cs`中添加如下所示的代码。Install方法会在插件加载的时候执行，具体插件何时加载请看[创建最基本的插件](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial1)章节中插件配置文件的详解一节。Install方法执行的时候会往视图菜单里添加一个按钮，点击按钮之后会执行ShowPane方法，关于菜单按钮的不理解，请看[Ribbon菜单的使用](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial5)。
 
    ```c#
    private RibbonGroupViewModel _groupVm;

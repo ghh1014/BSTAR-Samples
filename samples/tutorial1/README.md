@@ -4,7 +4,7 @@
 
 1. 在主程序BIM-STAR的plugins文件夹下新建解决方案及项目，如下图所示。![1](Pictures/1.png)
 
-2. 右键引用，添加引用`WallE.Core.dll`，如下图所示。
+2. 右键引用，添加BSTAR-Samples\libs中的`WallE.Core.dll`引用，如下图所示。
 
    ![2](Pictures/2.png)
 
