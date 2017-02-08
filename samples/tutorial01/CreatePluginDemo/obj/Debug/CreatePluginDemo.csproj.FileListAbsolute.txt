@@ -1,0 +1,8 @@
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\bin\Debug\config.plugin
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\bin\Debug\CreatePluginDemo.dll
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\bin\Debug\CreatePluginDemo.pdb
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\bin\Debug\WallE.Core.dll
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\bin\Debug\WallE.Core.pdb
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\obj\Debug\CreatePluginDemo.csprojResolveAssemblyReference.cache
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\obj\Debug\CreatePluginDemo.dll
+E:\Company\BIM-CS\BIM-STAR\dev\plugins\CreatePluginDemo\obj\Debug\CreatePluginDemo.pdb
