@@ -1,0 +1,78 @@
+﻿<core:ViewBase x:Class="AxisMgntSample.Views.AxisSpaceMgntView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:core="clr-namespace:WallE.Core;assembly=WallE.Core"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             xmlns:controls="clr-namespace:WallE.Assist.Controls;assembly=WallE.Assist"
+             xmlns:converters1="clr-namespace:WallE.Assist.Converters;assembly=WallE.Assist"
+             xmlns:converters="clr-namespace:AxisMgntSample.Converters"
+             xmlns:models="clr-namespace:AxisMgntSample.Models"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="800">
+    <core:ViewBase.Resources>
+        <converters1:BoolToVisibilityCvt x:Key="BoolToVisibilityCvt" />
+        <converters:AxisTypeToStrCvt x:Key="AxisTypeToStrCvt"/>
+        <DataTemplate x:Key="AxisCellTemplate" DataType="{x:Type models:AxisInfo}">
+            <StackPanel Orientation="Horizontal" Height="25">
+                <CheckBox
+                    IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                    Margin="1,0,-7,0" />
+                <TextBlock Text="{Binding Name}" ToolTip="{Binding Name}" VerticalAlignment="Center" Margin="2,0"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="LevelNameTemplate" DataType="{x:Type models:LevelInfo}">
+            <StackPanel Orientation="Horizontal" Height="25">
+                <controls:EditableBox Text="{Binding Name,Mode=TwoWay}" EndEdit="{Binding EndNameEdit}" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
+            </StackPanel>
+        </DataTemplate>
+    </core:ViewBase.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <controls:MetroProgressBar VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"
+                                       IsIndeterminate="True" MaxWidth="400"
+                                       Visibility="{Binding IsBusy, Converter={StaticResource BoolToVisibilityCvt}}" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <telerik:RadGridView Name="RadGridView" Grid.Row="0" ShowGroupPanel="False" ItemsSource="{Binding AxisInfos}" SelectionUnit="FullRow"  IsReadOnly="True"
+                             CanUserSelect="False" AutoExpandGroups="True" AutoGenerateColumns="False" GroupRenderMode="Flat" IsFilteringAllowed="False"
+                             RowIndicatorVisibility="Collapsed" Margin="4"  CanUserFreezeColumns="False" GridLinesVisibility="Horizontal">
+                    <telerik:RadGridView.Columns>
+                        <telerik:GridViewDataColumn CellTemplate="{StaticResource AxisCellTemplate}" Width="*" DataMemberBinding="{Binding Name}" Header="轴线名称"></telerik:GridViewDataColumn>
+                        <telerik:GridViewDataColumn Width="Auto" DataMemberBinding="{Binding Type,Converter={StaticResource AxisTypeToStrCvt}}" Header="轴线类型" IsReadOnly="true"></telerik:GridViewDataColumn>
+                    </telerik:RadGridView.Columns>
+                </telerik:RadGridView>
+                <telerik:RadGridView Grid.Row="1" ShowGroupPanel="False" ItemsSource="{Binding SpaceLevels}" SelectionUnit="FullRow" IsReadOnly="True"
+                             AutoExpandGroups="True" AutoGenerateColumns="False" GroupRenderMode="Flat" IsFilteringAllowed="False"
+                             RowIndicatorVisibility="Collapsed" Margin="4"  CanUserFreezeColumns="False" GridLinesVisibility="Horizontal">
+                    <telerik:RadGridView.Columns>
+                        <telerik:GridViewDataColumn CellTemplate="{StaticResource LevelNameTemplate}" Width="*" DataMemberBinding="{Binding Name}" Header="层区域"></telerik:GridViewDataColumn>
+                        <telerik:GridViewDataColumn Width="*" DataMemberBinding="{Binding StartElevation}" Header="高程1"></telerik:GridViewDataColumn>
+                        <telerik:GridViewDataColumn Width="*" DataMemberBinding="{Binding EndElevation}" Header="高程2"></telerik:GridViewDataColumn>
+                    </telerik:RadGridView.Columns>
+                </telerik:RadGridView>
+            </Grid>
+            <GridSplitter Width="1" Grid.Column="0" Background="Gray" HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Rectangle StrokeThickness="0" Height="1" Fill="Gray" VerticalAlignment="Top"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:Name="BtnImportAxis" Command="{Binding ImportAxis}" Content="导入轴线信息" Height="23" Margin="4"/>
+                <Button x:Name="BtnClearAllAxis" Command="{Binding ClearAllAxis}" Content="清除轴线信息" Height="23" Margin="4"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</core:ViewBase>
