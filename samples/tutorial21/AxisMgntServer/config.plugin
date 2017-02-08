@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Plugin Key="F97B3013-FFCC-49FC-B7EC-EEE268726C8E" 
+        FileName="ProjectInfoServer.dll" 
+        Name="轴网数据管理服务端" 
+        Description="轴网数据管理服务端"
+        Developer="深圳筑星科技有限公司"
+        LoadTime="LoadWhenLogined"
+        LoadOrder="0"
+        Version="1.0.0.0"
+        WebUrl="http://www.bstar5.com" 
+        Icon="Assets/logo.png">
+</Plugin>
