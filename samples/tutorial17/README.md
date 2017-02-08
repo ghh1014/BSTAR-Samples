@@ -13,18 +13,21 @@
 1.3、插件配置文件（`config.plugin`）中需要添加`SqlFiles`节点，在`SqlFiles`节点下可添加多个`SqlFile`节点，其中`SqlFile`节点需要设置sql文件的版本及在插件中的路径
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<Plugin Key="233F28D0-ADF1-4AC1-9A98-14E36440821F" 
-        FileName="QrCode.dll"
-        Name="二维码管理器"
-        Description="用于查看批次对应的构件的二维码信息，同时可以批量导出二维码图片。"
-        LoadTime="LoadWhenProjectOpened"
-        WebUrl="http://www.bstar5.com"
+<?xml version="1.0" encoding="utf-8" ?>
+<Plugin Key="5B07034C-C0DF-4F0E-A225-B0683D5BA9B6" 
+        FileName="AxisMgntSample.dll"
+        Name="轴线管理(示例)"
+        Description="使用该插件导入轴线信息，为4D自动关联提供支持"
         Developer="深圳筑星科技有限公司"
-        Icon="Assets/logo.png">
+        LoadTime="LoadWhenProjectOpened"
+        LoadOrder="10"
+        Version="1.0.0.0"
+        WebUrl="http://www.bstar5.com"
+        Icon="Assets/logo.png"
+        IsEnable="true">
   <SqlFiles>
-    <SqlFile Name="Sqls/v1.sql" Version="1"/>
-    <SqlFile Name="Sqls/v2.sql" Version="2"/>
+    <SqlFile Name="sqls/v1.sql" Version="1"/>
+    <SqlFile Name="sqls/v2.sql" Version="2"/>
   </SqlFiles>
 </Plugin>
 ```
