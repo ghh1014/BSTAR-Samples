@@ -1,6 +1,6 @@
 ## Ribbon菜单 UI
 
-![ui](Pictures\ui.png)
+![ui](Pictures/ui.png)
 
 
 
