@@ -10,7 +10,7 @@ public class NoticePlugin : IPlugin
     /// <summary>
     /// 本插件注册的服务集合
     /// </summary>
-        private List<Service> _services;
+    private List<Service> _services;
 
     public void Install(IPluginInfo pluginInfo)
     {
