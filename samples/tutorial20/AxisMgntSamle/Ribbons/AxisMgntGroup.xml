@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Group Header="轴网（示例）">
+  <Button Text="轴线管理（示例）" ToolTip="管理轴线及标高信息" ButtonSize="Large" LargeImage="轴线管理.png" Click="AxisManagementSample"
+          CollapseToMedium="Never"/>
+</Group>
