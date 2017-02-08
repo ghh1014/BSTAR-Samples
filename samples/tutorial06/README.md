@@ -2,7 +2,7 @@
 
 - 每个插件中可以设置若干模块，用户可以通过在权限管理中设置不同的权限来操作不同的功能。
 
-  ![commandright](Pictures\commandright.png)
+  ![commandright](Pictures/commandright.png)
 
 其中![chajian](Pictures/chajian.png)表示插件![xiangmu](Pictures/xiangmu.png)表示项目,有关权限值的设置请看《用户手册》
 
@@ -10,7 +10,7 @@
 
 ## 模块定义
 
-- 模块是在插件的配置文件中定义的（见[插件配置文件说明](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial1#插件的配置文件详解)） 如下：
+- 模块是在插件的配置文件中定义的（见[插件配置文件说明](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial01#插件的配置文件详解)） 如下：
 
   ```xml
   <Modules>

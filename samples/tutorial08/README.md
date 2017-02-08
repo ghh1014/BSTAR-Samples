@@ -27,7 +27,7 @@
   _menuHub.Register(menuName, mItemInfo, 0);
   ```
 
-  **说明**：`MenuItemInfo`对象包含两个构造函，其中第一个参数为显示的名称，第二的参数可以为在全局命令中定义的命令的唯一标识名（见[全局命令的使用](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial7)），或者直接使用`ICommand`对象（见[命令的使用](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial7)）。 `GroupName` 为一组菜单项的组名的标识名，不同组之间有分割线分割。
+  **说明**：`MenuItemInfo`对象包含两个构造函，其中第一个参数为显示的名称，第二的参数可以为在全局命令中定义的命令的唯一标识名（见[全局命令的使用](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial07)），或者直接使用`ICommand`对象（见[命令的使用](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial07)）。 `GroupName` 为一组菜单项的组名的标识名，不同组之间有分割线分割。
 
   ​	    `Register`方法包含三个参数，`MenuName`为已知的菜单名，第二个参数为`MenuItemInfo`对象，第三个为菜单的位置。
 

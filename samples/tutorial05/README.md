@@ -249,13 +249,13 @@ var group= M.RibbonManager.GetRibbonGroup(LocalConfig.InsertTabName);//当前的
 
 **Q**：已经按照步骤配置 但还是没有在`Ribbon`菜单中显示 
 
-**A**：请先检查所在的已有`Tab`或者`Group`的插件是否有加载（见插件的配置项）；若没有，则先加载对应的插件；若还是没有显示新建的`Ribbon`菜单，检查xml文件的属性，采用`xml`文件配置是需要将改变`xml`文件的属性![setting](Pictures\setting.png)
+**A**：请先检查所在的已有`Tab`或者`Group`的插件是否有加载（见插件的配置项）；若没有，则先加载对应的插件；若还是没有显示新建的`Ribbon`菜单，检查xml文件的属性，采用`xml`文件配置是需要将改变`xml`文件的属性![setting](Pictures/setting.png)
 
 ------
 
 **Q**：菜单读取不到图片
 
-**A**：检查图片文件输出方式是否正确![setting](Pictures\setting.png)
+**A**：检查图片文件输出方式是否正确![setting](Pictures/setting.png)
 
 ​      若正确检查`ViewModel`中的图片的路径及文件夹是否正确，如下
 
