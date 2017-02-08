@@ -1,22 +1,22 @@
 # 示例列表
 
-* [tutorial01](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial1) - 基本插件的开发流程
+* [tutorial01](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial01) - 基本插件的开发流程
 
-* [tutorial02](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial2) - 面板的设置
+* [tutorial02](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial02) - 面板的设置
 
-* [tutorial03](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial3) - 窗口的设置
+* [tutorial03](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial03) - 窗口的设置
 
-* [tutorial04](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial4) - 插件配置页的设置
+* [tutorial04](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial04) - 插件配置页的设置
 
-* [tutorial05](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial5) - `Ribbon`菜单的使用
+* [tutorial05](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial05) - `Ribbon`菜单的使用
 
-* [tutorial06](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial6) - 系统模块权限的定义及使用
+* [tutorial06](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial06) - 系统模块权限的定义及使用
 
-* [tutorial07](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial7) - 命令（`Command`）的使用
+* [tutorial07](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial07) - 命令（`Command`）的使用
 
-* [tutorial08](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial8) - 右键菜单
+* [tutorial08](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial08) - 右键菜单
 
-* [tutorial09](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial9) - `ViewModel`层与`View`层的创建
+* [tutorial09](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial09) - `ViewModel`层与`View`层的创建
 
 * [tutorial10](https://github.com/bstar5/BSTAR-Samples/tree/master/samples/tutorial10) - 使用Telerik控件库
 
