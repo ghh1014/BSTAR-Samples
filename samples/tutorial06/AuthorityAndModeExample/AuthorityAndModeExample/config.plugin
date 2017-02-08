@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin Key="95997601-3DC9-4368-8C94-4CEAFAE1D52F" 
+        FileName="AuthorityAndModeExample.dll"
+         Name="权限及模块测试示"
+        Description="测试示例"
+        Developer="深圳筑星科技有限公司"
+        LoadTime="LoadWhenLogined"
+        LoadOrder="10"
+        Version="1.0.0.0"
+        WebUrl="http://www.bstar5.com"
+        Icon="Assets/logo.png"
+        IsEnable="true"
+        >
+  <Modules>
+    <Modules  Key="410F9C8E-D306-4F09-8521-DC27AB384274" Name="模块1" Description="测试模块">
+      <Module Key="DFEAE145-E981-467C-A91C-E79673F1DFF7" Name="子测试模块1" Description="子测试模块"/>
+      <Module Key="33E7ADF9-0454-475C-B57C-98857106BD6E" Name="子测试模块2" Description="子测试模块"/>
+    </Modules>
+  </Modules>
+</Plugin>

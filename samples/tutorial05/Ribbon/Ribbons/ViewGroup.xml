@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Group Header="测试Group3" Name="ExampleGroup1">
+  <Button Text="测试Button" ButtonSize="Large" CollapseToMedium="Never" LargeImage="打开项目.png" SmallImage="打开项目16.png" Click="Onclick"/>
+</Group>

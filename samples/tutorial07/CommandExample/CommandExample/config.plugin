@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin Key="C63D8D2B-8574-42A0-BAA1-5F078512E859" 
+        FileName="CommandExample.dll"
+         Name="Command测试示例"
+        Description="测试示例"
+        Developer="深圳筑星科技有限公司"
+        LoadTime="LoadWhenStartup"
+        LoadOrder="10"
+        Version="1.0.0.0"
+        WebUrl="http://www.bstar5.com"
+        Icon="Assets/logo.png"
+        IsEnable="true"
+        >
+</Plugin>

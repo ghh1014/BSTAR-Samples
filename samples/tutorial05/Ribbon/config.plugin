@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin Key="8ECA1024-3DAF-4C49-80EF-C23873CC3C14" 
+        FileName="Ribbon.dll"
+         Name="Ribbon测试示例"
+        Description="测试示例"
+        Developer="深圳筑星科技有限公司"
+        LoadTime="LoadWhenStartup"
+        LoadOrder="10"
+        Version="1.0.0.0"
+        WebUrl="http://www.bstar5.com"
+        Icon="Assets/logo.png"
+        IsEnable="true"
+        >
+</Plugin>

@@ -1,0 +1,19 @@
+﻿<core:ViewBase x:Class="CommandExample.Views.CommandExampleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:core="clr-namespace:WallE.Core;assembly=WallE.Core"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <Button Content="点击控制下面的CheckBox" Command="{Binding Click}" Margin="0,5"></Button>
+        <StackPanel Orientation="Horizontal">
+            <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" Margin="5,0">控制按钮2</CheckBox>
+            <Button Content="按钮2" Command="{Binding ClickEnabled}"></Button>
+            <Button Content="按钮3" Command="{Binding ClickEnabledAsync.Command}"></Button>
+        </StackPanel>
+        <Button Content="注册全局命令" Command="{Binding RegisterGlobalCommand}" Margin="0,5"></Button>
+        <Button Content="全局命令" Command="{Binding GlobalCommand}" Margin="0,5"></Button>
+    </StackPanel>
+</core:ViewBase>

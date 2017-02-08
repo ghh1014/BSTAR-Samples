@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Group  Name="ExampleGroup1">
+  <Button Text="测试Button" ButtonSize="Large" CollapseToMedium="Never" LargeImage="打开项目.png" SmallImage="打开项目16.png" Click=""/>
+  <Button Text="测试Button1" ButtonSize="Large" CollapseToMedium="Never" LargeImage="打开项目.png" SmallImage="打开项目16.png" Click=""/>
+  <Button Text="测试Button2" ButtonSize="Large" CollapseToMedium="Never" LargeImage="打开项目.png" SmallImage="打开项目16.png" Click=""/>
+</Group>
